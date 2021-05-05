@@ -10,7 +10,7 @@ body {
 
 b {
     font-size: 20px;
-    margin: 0% 5%;
+    margin: 0 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -21,7 +21,7 @@ a:link, a:visited, a:after, a:active {
 
 .detailsbtn {
     display: block;
-    margin: 0% 5%;
+    margin: 0 5%;
     padding: 3px;
     float:right;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
