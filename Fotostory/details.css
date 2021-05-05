@@ -116,3 +116,34 @@ hr {
         "fill2 cont8";
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display: grid;
+        grid-gap: none;
+        grid-template-areas: 
+        "cont1 fill1 cont3"
+        "cont1 cont2 cont3"
+        "cont4 cont2 cont5"
+        "cont4 cont6 cont5"
+        "cont7 cont6 cont8"
+        "cont7 fill2 cont8";
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-gap: none;
+        grid-template-areas: 
+        "cont1 fill1"
+        "cont1 cont2"
+        "cont3 cont2"
+        "cont3 cont4"
+        "cont5 cont4"
+        "cont5 cont6"
+        "cont7 cont6"
+        "cont7 cont8"
+        "fill2 cont8";
+    }
+}
