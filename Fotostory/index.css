@@ -1,0 +1,41 @@
+body {
+    background-color: aliceblue;
+}
+
+.images {
+    display: block;
+    margin: auto;
+    width: 32%;
+}
+
+b {
+    font-size: 20px;
+    margin: 0% 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link, a:visited, a:after, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.detailsbtn {
+    display: block;
+    margin: 0% 5%;
+    padding: 3px;
+    float:right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 0.6rem;
+    border: solid 2px black;
+    background-color: lightgray;
+}
+
+.detailsbtn:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+
+hr {
+    border-top: solid 1px;
+}
