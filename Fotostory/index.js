@@ -5,3 +5,4 @@ function diashow() {
     document.getElementsByClassName("details").innerHTML = "Moin moin meine meisters!";
 }
 
+//Commit
