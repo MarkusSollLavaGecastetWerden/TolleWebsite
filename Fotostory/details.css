@@ -103,6 +103,7 @@ hr {
     .wrapper {
         display: grid;
         grid-gap: none;
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas: 
         "cont1 fill1 cont3"
         "cont1 cont2 cont3"
@@ -117,6 +118,7 @@ hr {
     .wrapper {
         display: grid;
         grid-gap: none;
+        grid-template-rows: repeat(9, 1fr);
         grid-template-areas: 
         "cont1 fill1"
         "cont1 cont2"
