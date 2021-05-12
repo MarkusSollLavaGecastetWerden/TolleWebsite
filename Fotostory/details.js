@@ -1,5 +1,6 @@
-window.addEventListener("load", getEXIF);
+window.addEventListener("load", getExif);
 
+<<<<<<< HEAD
 document.getElementById("pic1").addEventListener("onclick", changePic1);
 
 function getEXIF() {
@@ -8,4 +9,14 @@ function getEXIF() {
 
 function changePic1() {
     window.alert();
+=======
+function getExif() {
+    var img1 = document.getElementById("pic1");
+    var txt = EXIF.getData(img1, function() {
+        var make = EXIF.getTag(this, "Make");
+        var model = EXIF.getTag(this, "Model");
+        var makeAndModel = document.getElementById("txt");
+            makeAndModel.innerHTML = `${make} ${model}`;
+    });
+>>>>>>> 7b55882dbbed4d8e9173019989cf11ce2460964f
 }
