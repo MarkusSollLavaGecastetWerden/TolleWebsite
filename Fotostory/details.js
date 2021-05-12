@@ -8,6 +8,7 @@ function getEXIF() {
 
 function changePic1() {
     window.alert();
+}
 
 function getExif() {
     var img1 = document.getElementById("pic1");
