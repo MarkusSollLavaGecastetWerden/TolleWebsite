@@ -1,8 +1,9 @@
-var id = setInterval(diashow, 5000);
+let id = setInterval(diashow, 5000);
+let bildNr = 1;
 
 function diashow() {
-    document.getElementsByClassName("images").src = "pictures/Bild3.jpg";
-    document.getElementsByClassName("details").innerHTML = "Moin moin meine meisters!";
-}
+    bildNr++;
+    if (bildNr > 8) bildNr = 1;
 
-//Commit
+    document.getElementById("images").src = "pictures/Bild" + bildNr + ".jpg";
+}
