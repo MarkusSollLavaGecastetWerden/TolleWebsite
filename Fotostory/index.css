@@ -2,7 +2,7 @@ body {
     background-color: aliceblue;
 }
 
-.images {
+#images {
     display: block;
     margin: auto;
     width: 32%;
@@ -19,7 +19,7 @@ a:link, a:visited, a:after, a:active {
     text-decoration: none;
 }
 
-.detailsbtn {
+#detailsbtn {
     display: block;
     margin: 0% 5%;
     padding: 3px;
@@ -30,7 +30,7 @@ a:link, a:visited, a:after, a:active {
     background-color: lightgray;
 }
 
-.detailsbtn:hover {
+#detailsbtn:hover {
     transition: 0.5s;
     background-color: black;
     color: white;
