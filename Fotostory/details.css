@@ -103,7 +103,10 @@ hr {
     .wrapper {
         display: grid;
         grid-gap: none;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 25px;
+
+        
         grid-template-areas: 
         "cont1 fill1 cont3"
         "cont1 cont2 cont3"
@@ -111,6 +114,20 @@ hr {
         "cont4 cont6 cont5"
         "cont7 cont6 cont8"
         "cont7 fill2 cont8";
+        
+        /*
+        grid-template-areas: 
+        "cont1 fill1 fill1"
+        "cont1 cont2 fill1"
+        "cont1 cont2 cont3"
+        "cont4 cont2 cont3"
+        "cont4 cont5 cont3"
+        "cont4 cont5 cont6"
+        "cont7 cont5 cont6"
+        "cont7 cont8 cont6"
+        "cont7 cont8 fill2"
+        "fill2 cont8 fill2"
+        */
     }
 }
 
