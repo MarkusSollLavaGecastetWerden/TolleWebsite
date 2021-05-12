@@ -39,3 +39,9 @@ a:link, a:visited, a:after, a:active {
 hr {
     border-top: solid 1px;
 }
+
+@media screen and (max-width: 800px) {
+    #images {
+        width: 60%;
+    }
+}

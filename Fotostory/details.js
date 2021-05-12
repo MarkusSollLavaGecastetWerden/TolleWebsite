@@ -1,5 +1,15 @@
 window.addEventListener("load", getExif);
 
+document.getElementById("pic1").addEventListener("onclick", changePic1);
+
+function getEXIF() {
+    alert("sjflsjdflk");
+}
+
+function changePic1() {
+    window.alert();
+}
+
 function getExif() {
     var img1 = document.getElementById("pic1");
     EXIF.getData(img1, function() {
