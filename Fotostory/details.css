@@ -58,35 +58,35 @@ hr {
 }
 
 #pic1 {
-    width: 30%;
+    width: 40%;
     grid-area: cont1;
 }
 #pic2 {
-    width: 30%;
+    width: 40%;
     grid-area: cont2;
 }
 #pic3 {
-    width: 30%;
+    width: 40%;
     grid-area: cont3;
 }
 #pic4 {
-    width: 30%;
+    width: 40%;
     grid-area: cont4;
 }
 #pic5 {
-    width: 30%;
+    width: 40%;
     grid-area: cont5;
 }
 #pic6 {
-    width: 30%;
+    width: 40%;
     grid-area: cont6;
 }
 #pic7 {
-    width: 30%;
+    width: 40%;
     grid-area: cont7;
 }
 #pic8 {
-    width: 30%;
+    width: 40%;
     grid-area: cont8;
 }
 
