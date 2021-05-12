@@ -100,8 +100,7 @@ hr {
     background-color: grey;
 }
 
-/*
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
     .wrapper {
         display: grid;
         grid-gap: none;
@@ -114,7 +113,6 @@ hr {
         "cont7 fill2 cont8";
     }
 }
-*/
 
 @media screen and (max-width: 600px) {
     .wrapper {
