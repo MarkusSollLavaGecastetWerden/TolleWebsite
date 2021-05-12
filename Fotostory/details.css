@@ -58,35 +58,35 @@ hr {
     grid-area: cont8;
 }
 
-.pic1 {
+#pic1 {
     width: 30%;
     grid-area: cont1;
 }
-.pic2 {
+#pic2 {
     width: 30%;
     grid-area: cont2;
 }
-.pic3 {
+#pic3 {
     width: 30%;
     grid-area: cont3;
 }
-.pic4 {
+#pic4 {
     width: 30%;
     grid-area: cont4;
 }
-.pic5 {
+#pic5 {
     width: 30%;
     grid-area: cont5;
 }
-.pic6 {
+#pic6 {
     width: 30%;
     grid-area: cont6;
 }
-.pic7 {
+#pic7 {
     width: 30%;
     grid-area: cont7;
 }
-.pic8 {
+#pic8 {
     width: 30%;
     grid-area: cont8;
 }
@@ -100,7 +100,7 @@ hr {
     background-color: grey;
 }
 
-/*
+
 @media screen and (min-width: 1000px) {
     .wrapper {
         display: grid;
@@ -114,7 +114,7 @@ hr {
         "cont7 fill2 cont8";
     }
 }
-*/
+
 
 @media screen and (max-width: 600px) {
     .wrapper {
