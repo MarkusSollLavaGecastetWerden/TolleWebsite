@@ -34,60 +34,68 @@ hr {
 
 .cont1 {
     grid-area: cont1;
+    padding: auto;
 }
 .cont2 {
     grid-area: cont2;
+    padding: auto;
 }
 .cont3 {
     grid-area: cont3;
+    padding: auto;
 }
 .cont4 {
     grid-area: cont4;
+    padding: auto;
 }
 .cont5 {
     grid-area: cont5;
+    padding: auto;
 }
 .cont6 {
     grid-area: cont6;
+    padding: auto;
 }
 .cont7 {
     grid-area: cont7;
+    padding: auto;
 }
 .cont8 {
     grid-area: cont8;
+    padding: auto;
 }
 
 #pic1 {
-    width: 40%;
+    width: 60%;
     grid-area: cont1;
 }
 #pic2 {
-    width: 40%;
+    width: 60%;
     grid-area: cont2;
 }
 #pic3 {
-    width: 40%;
+    width: 60%;
     grid-area: cont3;
 }
 #pic4 {
-    width: 40%;
+    width: 60%;
     grid-area: cont4;
 }
 #pic5 {
-    width: 40%;
+    width: 60%;
     grid-area: cont5;
 }
 #pic6 {
-    width: 40%;
+    width: 60%;
     grid-area: cont6;
 }
 #pic7 {
-    width: 40%;
+    width: 60%;
     grid-area: cont7;
 }
 #pic8 {
-    width: 40%;
-    grid-area: cont8;
+    width: 60%;
+    grid-area: cont1;
 }
 
 .fill1 {
