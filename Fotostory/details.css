@@ -32,7 +32,7 @@ hr {
     border-top: solid 1px;
 }
 
-.cont1 {
+/*.cont1 {
     grid-area: cont1;
     padding: auto;
 }
@@ -63,7 +63,7 @@ hr {
 .cont8 {
     grid-area: cont8;
     padding: auto;
-}
+}*/
 
 #pic1 {
     width: 60%;
@@ -95,16 +95,16 @@ hr {
 }
 #pic8 {
     width: 60%;
-    grid-area: cont1;
+    grid-area: cont8;
 }
 
 .fill1 {
     grid-area: fill1;
-    background-color: grey;
+    
 }
 .fill2 {
     grid-area: fill2;
-    background-color: grey;
+    
 }
 
 @media screen and (min-width: 600px) {
