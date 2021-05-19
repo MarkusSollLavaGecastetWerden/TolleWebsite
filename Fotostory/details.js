@@ -10,12 +10,12 @@ function changePic1() {
 }
 
 function getExif() {
-    document.getElementById("pic1").innerHTML = EXIF.getTag(this, "ExposureTime");
+    document.getElementById("data1").innerHTML = EXIF.getTag(this, "ExposureTime");
     var img1 = document.getElementById("pic1");
     EXIF.getData(img1, function() {
         var make = EXIF.getTag(this, "Make");
         var model = EXIF.getTag(this, "Model");
-        var makeAndModel = document.getElementById("txt");
+        var makeAndModel = document.getElementById("data1");
             makeAndModel.innerHTML = `${make} ${model}`;
     });
 }
