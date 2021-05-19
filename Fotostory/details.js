@@ -1,5 +1,5 @@
 window.addEventListener("load", load);
-window.addEventListener("load", getExif);
+/*window.addEventListener("load", getExif);*/
 
 let planung = {
     "becher": {
