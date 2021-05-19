@@ -1,7 +1,7 @@
 window.addEventListener("load", load);
 window.addEventListener("load", getExif);
 
-document.getElementById("pic1").addEventListener("click", changePic1);
+document.getElementById("cont1").addEventListener("click", changePic1);
 
 function load() {
     document.getElementById("pic1").addEventListener("onclick", changePic1);
