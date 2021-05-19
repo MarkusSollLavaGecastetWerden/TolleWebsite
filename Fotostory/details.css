@@ -32,7 +32,7 @@ hr {
     border-top: solid 1px;
 }
 
-/*.cont1 {
+.cont1 {
     grid-area: cont1;
     padding: auto;
 }
@@ -63,39 +63,33 @@ hr {
 .cont8 {
     grid-area: cont8;
     padding: auto;
-}*/
+}
 
 #pic1 {
     width: 60%;
-    grid-area: cont1;
+
 }
 #pic2 {
     width: 60%;
-    grid-area: cont2;
+
 }
 #pic3 {
     width: 60%;
-    grid-area: cont3;
 }
 #pic4 {
     width: 60%;
-    grid-area: cont4;
 }
 #pic5 {
     width: 60%;
-    grid-area: cont5;
 }
 #pic6 {
     width: 60%;
-    grid-area: cont6;
 }
 #pic7 {
     width: 60%;
-    grid-area: cont7;
 }
 #pic8 {
     width: 60%;
-    grid-area: cont8;
 }
 
 .fill1 {
