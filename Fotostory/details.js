@@ -16,7 +16,15 @@ let planung = {
     },
     "prater": {
         "zeit": 30,
-
+        "iso": 100,
+    },
+    "gloriette": {
+        "zeit": 30,
+        "iso": 100,
+    },
+    "innenstadt": {
+        "zeit": 2,
+        "iso": 100,
     }
 };
 
