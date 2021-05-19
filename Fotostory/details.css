@@ -32,41 +32,45 @@ hr {
     border-top: solid 1px;
 }
 
-<<<<<<< HEAD
 #cont1 {
-=======
-.cont1 {
->>>>>>> 27cedf5ed1a819cef277585946fe7dabdd48a66d
     grid-area: cont1;
     padding: auto;
+    text-align: center;
 }
 #cont2 {
     grid-area: cont2;
     padding: auto;
+    text-align: center;
 }
 #cont3 {
     grid-area: cont3;
     padding: auto;
+    text-align: center;
 }
 #cont4 {
     grid-area: cont4;
     padding: auto;
+    text-align: center;
 }
 #cont5 {
     grid-area: cont5;
     padding: auto;
+    text-align: center;
 }
 #cont6 {
     grid-area: cont6;
     padding: auto;
+    text-align: center;
 }
 #cont7 {
     grid-area: cont7;
     padding: auto;
+    text-align: center;
 }
 #cont8 {
     grid-area: cont8;
     padding: auto;
+    text-align: center;
 }
 
 #pic1 {
