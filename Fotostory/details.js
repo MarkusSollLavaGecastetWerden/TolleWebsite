@@ -20,7 +20,7 @@ function load() {
 
     /* ----------------------------- BILD 3 Hover Event ------------------------------------- */
     document.getElementById("cont3").addEventListener("mouseover", () => {
-        document.getElementById("cont1").innerHTML = "This is a test!";
+        document.getElementById("cont3").innerHTML = "This is a test!";
     });
     document.getElementById("cont3").addEventListener("mouseout", () => {
         document.getElementById("cont3").innerHTML = '<img src="pictures/Bild3.jpg" id="pic3">';

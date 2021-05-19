@@ -32,50 +32,62 @@ hr {
     border-top: solid 1px;
 }
 
+img {
+    border-radius: 1rem;
+    transition: 1s;
+}
+
 #cont1 {
     grid-area: cont1;
     padding: auto;
     text-align: center;
+    background-color: grey;
 }
 #cont2 {
     grid-area: cont2;
     padding: auto;
     text-align: center;
+    background-color: grey;
 }
 #cont3 {
     grid-area: cont3;
     padding: auto;
     text-align: center;
+    background-color: grey;
 }
 #cont4 {
     grid-area: cont4;
     padding: auto;
     text-align: center;
+    background-color: grey;
 }
 #cont5 {
     grid-area: cont5;
     padding: auto;
     text-align: center;
+    background-color: grey;
 }
 #cont6 {
     grid-area: cont6;
     padding: auto;
     text-align: center;
+    background-color: grey;
 }
 #cont7 {
     grid-area: cont7;
     padding: auto;
     text-align: center;
+    background-color: grey;
 }
 #cont8 {
     grid-area: cont8;
     padding: auto;
     text-align: center;
+    background-color: grey;
 }
 
 #pic1 {
     width: 60%;
-
 }
 #pic2 {
     width: 60%;
@@ -106,12 +118,11 @@ hr {
     grid-area: fill2;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     .wrapper {
         display: grid;
-        grid-gap: none;
         grid-template-rows: repeat(3, 1fr);
-        gap: 25px;
+        gap: auto;
 
         
         grid-template-areas: 
@@ -121,24 +132,10 @@ hr {
         "cont4 cont6 cont5"
         "cont7 cont6 cont8"
         "cont7 fill2 cont8";
-        
-        /*
-        grid-template-areas: 
-        "cont1 fill1 fill1"
-        "cont1 cont2 fill1"
-        "cont1 cont2 cont3"
-        "cont4 cont2 cont3"
-        "cont4 cont5 cont3"
-        "cont4 cont5 cont6"
-        "cont7 cont5 cont6"
-        "cont7 cont8 cont6"
-        "cont7 cont8 fill2"
-        "fill2 cont8 fill2"
-        */
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .wrapper {
         display: grid;
         grid-gap: none;
