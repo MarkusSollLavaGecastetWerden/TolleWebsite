@@ -13,6 +13,7 @@ function changePic1() {
 }
 
 function getExif() {
+    document.getElementById("data1").innerHTML = EXIF.getTag(this, "ExposureTime");
     var img1 = document.getElementById("pic1");
     EXIF.getData(img1, function() {
         var make = EXIF.getTag(this, "Make");
