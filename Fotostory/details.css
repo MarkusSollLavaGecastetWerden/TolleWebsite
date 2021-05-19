@@ -94,11 +94,9 @@ hr {
 
 .fill1 {
     grid-area: fill1;
-    
 }
 .fill2 {
     grid-area: fill2;
-    
 }
 
 @media screen and (min-width: 600px) {
