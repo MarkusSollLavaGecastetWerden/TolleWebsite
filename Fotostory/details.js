@@ -1,6 +1,24 @@
 window.addEventListener("load", load);
 window.addEventListener("load", getExif);
 
+let planung = {
+    becher: {
+        zeit: 30,
+        iso: 100,
+    },
+    donau: {
+        zeit: 30,
+        iso: 100,
+    },
+    ubahn: {
+        zeit: 1,
+        iso: 100,
+    },
+    prater: {
+
+    }
+};
+
 function load() {
     document.getElementById("pic1").addEventListener("onclick", changePic1);
 }
