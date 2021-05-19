@@ -1,6 +1,25 @@
 window.addEventListener("load", load);
 window.addEventListener("load", getExif);
 
+let planung = {
+    "becher": {
+        "zeit": 30,
+        "iso": 100,
+    },
+    "donau": {
+        "zeit": 30,
+        "iso": 100,
+    },
+    "ubahn": {
+        "zeit": 1,
+        "iso": 100,
+    },
+    "prater": {
+        "zeit": 30,
+        
+    }
+};
+
 function load() {
     /* ----------------------------- BILD 1 Hover Event ------------------------------------- */
     document.getElementById("cont1").addEventListener("mouseover", () => {
@@ -68,8 +87,8 @@ function load() {
 }
 
 function getExif() {
-    document.getElementById("data1").innerHTML = EXIF.getTag(this, "ExposureTime");
     var img1 = document.getElementById("pic1");
+    document.getElementById("cont1").innerHTML = EXIF.getTag(img1, "ExposureTime");
     EXIF.getData(img1, function() {
         var make = EXIF.getTag(this, "Make");
         var model = EXIF.getTag(this, "Model");
