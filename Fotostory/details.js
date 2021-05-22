@@ -1,5 +1,5 @@
 window.addEventListener("load", load);
-/*window.addEventListener("load", getExif);*/
+window.addEventListener("load", getExif);
 
 let planung = {
     "becher": {
@@ -31,7 +31,7 @@ let planung = {
 function load() {
     for (let i = 1; i <= 8; i++) {
         document.getElementById("cont" + i).addEventListener("mouseover", () => {
-            document.getElementById("cont" + i).innerHTML = "This is a test!";
+            document.getElementById("cont" + i).innerHTML = "test";
         });
         document.getElementById("cont" + i).addEventListener("mouseout", () => {
             document.getElementById("cont" + i).innerHTML = '<img src="pictures/Bild' + i + '.jpg" id="pic' + i + '">';

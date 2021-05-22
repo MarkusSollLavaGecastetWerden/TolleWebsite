@@ -39,49 +39,41 @@ img {
 
 #cont1 {
     grid-area: cont1;
-    padding: auto;
     text-align: center;
     background-color: grey;
 }
 #cont2 {
     grid-area: cont2;
-    padding: auto;
     text-align: center;
     background-color: grey;
 }
 #cont3 {
     grid-area: cont3;
-    padding: auto;
     text-align: center;
     background-color: grey;
 }
 #cont4 {
     grid-area: cont4;
-    padding: auto;
     text-align: center;
     background-color: grey;
 }
 #cont5 {
     grid-area: cont5;
-    padding: auto;
     text-align: center;
     background-color: grey;
 }
 #cont6 {
     grid-area: cont6;
-    padding: auto;
     text-align: center;
     background-color: grey;
 }
 #cont7 {
     grid-area: cont7;
-    padding: auto;
     text-align: center;
     background-color: grey;
 }
 #cont8 {
     grid-area: cont8;
-    padding: auto;
     text-align: center;
     background-color: grey;
 }
@@ -111,10 +103,10 @@ img {
     width: 60%;
 }
 
-.fill1 {
+#fill1 {
     grid-area: fill1;
 }
-.fill2 {
+#fill2 {
     grid-area: fill2;
 }
 
@@ -122,7 +114,7 @@ img {
     .wrapper {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
-        gap: auto;
+        gap: none;
 
         
         grid-template-areas: 
