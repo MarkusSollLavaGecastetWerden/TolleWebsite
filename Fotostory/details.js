@@ -33,7 +33,7 @@ function load() {
 
 function getExif() {
     var img1 = document.getElementById("pic1");
-    document.getElementById("cont1").innerHTML = EXIF.getTag(img1, "ExposureTime");
+    document.getElementById("pic1").innerHTML = EXIF.getTag(img1, "ExposureTime");
     EXIF.getData(img1, function() {
         var make = EXIF.getTag(this, "Make");
         var model = EXIF.getTag(this, "Model");
