@@ -20,7 +20,7 @@ a:link, a:visited, a:after, a:active {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 0.6rem;
     border: solid 2px black;
-    background-color: white;
+    background-color: aliceblue;
 }
 
 .menubtn:hover {
@@ -37,45 +37,41 @@ img {
     transition: 1s;
 }
 
+footer {
+    text-align: center;
+}
+
 #cont1 {
     grid-area: cont1;
     text-align: center;
-    background-color: grey;
 }
 #cont2 {
     grid-area: cont2;
     text-align: center;
-    background-color: grey;
 }
 #cont3 {
     grid-area: cont3;
     text-align: center;
-    background-color: grey;
 }
 #cont4 {
     grid-area: cont4;
     text-align: center;
-    background-color: grey;
 }
 #cont5 {
     grid-area: cont5;
     text-align: center;
-    background-color: grey;
 }
 #cont6 {
     grid-area: cont6;
     text-align: center;
-    background-color: grey;
 }
 #cont7 {
     grid-area: cont7;
     text-align: center;
-    background-color: grey;
 }
 #cont8 {
     grid-area: cont8;
     text-align: center;
-    background-color: grey;
 }
 
 #pic1 {
