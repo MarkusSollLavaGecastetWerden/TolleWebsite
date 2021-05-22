@@ -20,12 +20,12 @@ a:link, a:visited, a:after, a:active {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 0.6rem;
     border: solid 2px black;
-    background-color: lightgrey;
+    background-color: white;
 }
 
 .menubtn:hover {
     transition: 0.5s;
-    background-color: aliceblue;
+    background-color: lightblue;
 }
 
 hr {
