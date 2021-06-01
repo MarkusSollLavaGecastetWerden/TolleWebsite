@@ -101,8 +101,8 @@ function generateText(index) {
 }
 
 function getExif() {
+    return;
     var img1 = document.getElementById("pic1");
-    alert(img1);
     alert(EXIF.getTag(img1, "ExposureTime"));
     EXIF.getData(img1, function() {
         var make = EXIF.getTag(this, "Make");

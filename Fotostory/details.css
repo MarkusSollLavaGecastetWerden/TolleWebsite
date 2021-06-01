@@ -35,10 +35,15 @@ hr {
 img {
     border-radius: 1rem;
     transition: 1s;
+    max-width: 100%;
 }
 
 footer {
     text-align: center;
+}
+
+div {
+    max-width: 100%;
 }
 
 #cont1 {
