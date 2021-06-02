@@ -33,6 +33,13 @@ footer {
     font-size: 100px;
 }
 
+#skipLeft {
+    margin-left: 25%;
+}
+#skipRight {
+    margin-right: 25%;
+}
+
 #detailsbtn {
     display: block;
     margin: 0% 5%;
@@ -56,7 +63,6 @@ hr {
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
 
