@@ -36,33 +36,33 @@ let planung = {
 
 let wirklichKeit = {
     "becher": {
-        "zeit": 30,
-        "iso": 100,
+        "zeit": 300,
+        "iso": 32,
         "blende": "groß",
     },
     "donau": {
-        "zeit": 30,
+        "zeit": 1500,
         "iso": 100,
         "blende": "mittel",
     },
     "ubahn": {
-        "zeit": 1,
+        "zeit": 4,
         "iso": 100,
         "blende": "klein",
     },
     "prater": {
-        "zeit": 30,
-        "iso": 100,
+        "zeit": 180,
+        "iso": 50,
         "blende": "mittel",
     },
     "gloriette": {
-        "zeit": 30,
-        "iso": 100,
+        "zeit": 750,
+        "iso": 50,
         "blende": "mittel",
     },
     "innenstadt": {
-        "zeit": 2,
-        "iso": 100,
+        "zeit": 250,
+        "iso": 50,
         "blende": "mittel",
     }
 };
