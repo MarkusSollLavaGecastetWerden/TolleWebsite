@@ -1,5 +1,6 @@
 * {
     font-family: cursive;
+    user-select: none;
 }
 
 body {
@@ -25,7 +26,12 @@ a:link, a:visited, a:after, a:active {
 
 footer {
     text-align: center;
+}
 
+#skipLeft, #skipRight {
+    font-weight: bold;
+    font-size: 100px;
+    margin: auto;
 }
 
 #detailsbtn {
