@@ -75,7 +75,6 @@ function load() {
             document.getElementById("cont" + i).innerHTML = generateText(i);
         });
         document.getElementById("cont" + i).addEventListener("mouseout", () => {
-            console.log("revert" + (i - 1));
             document.getElementById("cont" + i).innerHTML = '<img src="pictures/Bild' + i + '.jpg" id="pic' + i + '">';
         });
     }
