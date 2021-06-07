@@ -1,3 +1,8 @@
+* {
+    font-family: cursive;
+    user-select: none;
+}
+
 body {
     background-color: aliceblue;
 }
@@ -12,7 +17,6 @@ b {
     text-align: center;
     font-size: 20px;
     margin: 0% 5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a:link, a:visited, a:after, a:active {
@@ -22,7 +26,18 @@ a:link, a:visited, a:after, a:active {
 
 footer {
     text-align: center;
+}
 
+#skipLeft, #skipRight {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#skipLeft {
+    margin-left: 25%;
+}
+#skipRight {
+    margin-right: 25%;
 }
 
 #detailsbtn {
@@ -45,8 +60,26 @@ hr {
     border-top: solid 1px;
 }
 
-@media screen and (max-width: 800px) {
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
     #images {
         width: 90%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #images {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #images {
+        width: 30%;
     }
 }
