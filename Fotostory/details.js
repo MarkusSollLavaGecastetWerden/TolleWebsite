@@ -109,13 +109,23 @@ function load() {
             state[i][1] = false;
             change[i] = false;
         });
-        document.getElementById("pi").addEventListener("mousedown", () => {
-            if (oemo) return;
-            window.open("https://oemo.at/");
-            oemo = true;
-        });
-        document.getElementById("pi").addEventListener("mouseup", () => {
-            oemo = false;
+    }
+    document.getElementById("pi").addEventListener("mousedown", () => {
+        if (oemo) return;
+        window.open("https://oemo.at/");
+        oemo = true;
+    });
+    document.getElementById("pi").addEventListener("mouseup", () => {
+        oemo = false;
+    });
+    for (let i = 0; i < 3; i++) {
+        document.getElementsByClassName("w")[i].addEventListener("mouseover", () => {
+            console.log("M");
+            if (document.getElementsByClassName("w")[i].innerHTML == "W") {
+                document.getElementsByClassName("w")[i].innerHTML = "M";
+            } else {
+               document.getElementsByClassName("w")[i].innerHTML = "W";
+            }
         });
     }
 }
