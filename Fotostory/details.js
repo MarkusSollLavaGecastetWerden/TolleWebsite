@@ -137,9 +137,9 @@ function load() {
 
 function diashow() {
     //console.log(color);
-    color = (color + 1) % (0xF000000);
+    color = (color + 1) % (0x1000000);
     document.getElementById("c").style.backgroundColor = "#" + color;
-    document.getElementsByClassName("title")[0].style.backgroundColor = "#" + (color + 89);
+    document.getElementsByClassName("title")[0].style.color = "#" + (0x1000000 - color);
 }
 
 function generateText(index) {
