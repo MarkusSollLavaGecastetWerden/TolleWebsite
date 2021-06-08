@@ -71,6 +71,8 @@ let fotos = ["becher", "becher", "donau", "ubahn", "prater", "gloriette", "glori
 let state = [];
 let change = [];
 
+let map = [0, 1, 1, 3, 4, 5, 7, 7, 8];
+
 function load() {
     for (let i = 1; i <= 8; i++) {
         state[i] = [false, false];
@@ -94,7 +96,7 @@ function load() {
         document.getElementById("cont" + i).addEventListener("mousedown", () => {
             if (state[i][1]) return;
             console.log("down " + i);
-            document.getElementById("cont" + i).innerHTML = '<img src="plan/bild' + i + '.jpg" id="pic' + i + '">';
+            document.getElementById("cont" + i).innerHTML = '<img src="Plan/bild' + map[i] + '.png" id="pic' + i + '">';
             state[i][1] = true;
             change[i] = true;
         });
