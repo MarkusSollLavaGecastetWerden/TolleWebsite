@@ -107,6 +107,9 @@ function load() {
             state[i][1] = false;
             change[i] = false;
         });
+        document.getElementById("pi").addEventListener("click", () => {
+            window.open("https://oemo.at/");
+        });
     }
 }
 
