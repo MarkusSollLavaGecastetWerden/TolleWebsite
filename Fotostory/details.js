@@ -94,7 +94,7 @@ function load() {
         document.getElementById("cont" + i).addEventListener("mousedown", () => {
             if (state[i][1]) return;
             console.log("down " + i);
-            document.getElementById("cont" + i).innerHTML = '<img src="pictures/Plan' + i + '.jpg" id="pic' + i + '">';
+            document.getElementById("cont" + i).innerHTML = '<img src="plan/bild' + i + '.jpg" id="pic' + i + '">';
             state[i][1] = true;
             change[i] = true;
         });
