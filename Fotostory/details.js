@@ -1,5 +1,5 @@
 window.addEventListener("load", load);
-window.addEventListener("load", getExif);
+//window.addEventListener("load", getExif);
 
 let planung = {
     "becher": {
@@ -68,21 +68,48 @@ let wirklichKeit = {
 };
 
 let fotos = ["becher", "becher", "donau", "ubahn", "prater", "gloriette", "gloriette", "innenstadt"];
+let state = [];
+let change = [];
 
 function load() {
     for (let i = 1; i <= 8; i++) {
+        state[i] = [false, false];
         document.getElementById("cont" + i).addEventListener("mouseover", () => {
+            if (change[i]) {
+                change[i] = false;
+                return;
+            }
+            if (state[i][0]) return;
+            console.log("hover " + i);
             document.getElementById("cont" + i).innerHTML = generateText(i);
+            state[i][0] = true;
         });
         document.getElementById("cont" + i).addEventListener("mouseout", () => {
+            if (!state[i][0]) return;
+            if (change[i]) return;
+            console.log("nohover " + i);
             document.getElementById("cont" + i).innerHTML = '<img src="pictures/Bild' + i + '.jpg" id="pic' + i + '">';
+            state[i][0] = false;
+        });
+        document.getElementById("cont" + i).addEventListener("mousedown", () => {
+            if (state[i][1]) return;
+            console.log("down " + i);
+            document.getElementById("cont" + i).innerHTML = '<img src="pictures/Plan' + i + '.jpg" id="pic' + i + '">';
+            state[i][1] = true;
+            change[i] = true;
+        });
+        document.getElementById("cont" + i).addEventListener("mouseup", () => {
+            if (!state[i][1]) return;
+            console.log("up " + i);
+            document.getElementById("cont" + i).innerHTML = generateText(i);
+            state[i][1] = false;
+            change[i] = false;
         });
     }
 }
 
 function generateText(index) {
     index = index - 1;
-    console.log(index);
     
     let text = "";
     let data = planung[fotos[index]];
@@ -100,7 +127,6 @@ function generateText(index) {
 }
 
 function getExif() {
-    return;
     var img1 = document.getElementById("pic1");
     alert(EXIF.getTag(img1, "ExposureTime"));
     EXIF.getData(img1, function() {
