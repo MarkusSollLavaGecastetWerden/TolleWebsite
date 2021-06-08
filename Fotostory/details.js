@@ -128,6 +128,9 @@ function load() {
             }
         });
     }
+    document.getElementById("chroma").addEventListener("mouseup", () => {
+        oemo = false;
+    });
 }
 
 function generateText(index) {
