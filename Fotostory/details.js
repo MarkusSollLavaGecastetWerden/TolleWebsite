@@ -71,6 +71,8 @@ let fotos = ["becher", "becher", "donau", "ubahn", "prater", "gloriette", "glori
 let state = [];
 let change = [];
 
+let oemo = false;
+
 let map = [0, 1, 1, 3, 4, 5, 7, 7, 8];
 
 function load() {
@@ -107,8 +109,13 @@ function load() {
             state[i][1] = false;
             change[i] = false;
         });
-        document.getElementById("pi").addEventListener("click", () => {
+        document.getElementById("pi").addEventListener("mousedown", () => {
+            if (oemo) return;
             window.open("https://oemo.at/");
+            oemo = true;
+        });
+        document.getElementById("pi").addEventListener("mouseup", () => {
+            oemo = false;
         });
     }
 }
