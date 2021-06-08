@@ -75,6 +75,8 @@ let oemo = false;
 
 let map = [0, 1, 1, 3, 4, 5, 7, 7, 8];
 
+let color = 0x000000;
+
 function load() {
     for (let i = 1; i <= 8; i++) {
         state[i] = [false, false];
@@ -128,9 +130,16 @@ function load() {
             }
         });
     }
-    document.getElementById("chroma").addEventListener("mouseup", () => {
-        oemo = false;
+    document.getElementById("chroma").addEventListener("click", () => {
+        setInterval(diashow, 10);
     });
+}
+
+function diashow() {
+    //console.log(color);
+    color = (color + 1) % (0xF000000);
+    document.getElementById("c").style.backgroundColor = "#" + color;
+    document.getElementsByClassName("title")[0].style.backgroundColor = "#" + (color + 89);
 }
 
 function generateText(index) {
