@@ -70,11 +70,23 @@ hr {
     #images {
         width: 90%;
     }
+    #skipLeft {
+        margin-left: 5%;
+    }
+    #skipRight {
+        margin-right: 5%;
+    }
 }
 
 @media screen and (min-width: 700px) {
     #images {
         width: 45%;
+    }
+    #skipLeft {
+        margin-left: 20%;
+    }
+    #skipRight {
+        margin-right: 20%;
     }
 }
 
