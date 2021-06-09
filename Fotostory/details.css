@@ -50,54 +50,63 @@ div {
     max-width: 100%;
 }
 
+
 #cont1 {
     grid-area: cont1;
     text-align: center;
     width: 416px;
     height: 337px;
 }
+
 #cont2 {
     grid-area: cont2;
     text-align: center;
     width: 416px;
     height: 337px;
 }
+
 #cont3 {
     grid-area: cont3;
     text-align: center;
     width: 416px;
     height: 337px;
 }
+
 #cont4 {
     grid-area: cont4;
     text-align: center;
     width: 416px;
     height: 337px;
 }
+
 #cont5 {
     grid-area: cont5;
     text-align: center;
     width: 416px;
     height: 337px;
 }
+
 #cont6 {
     grid-area: cont6;
     text-align: center;
     width: 416px;
     height: 337px;
 }
+
 #cont7 {
     grid-area: cont7;
     text-align: center;
     width: 416px;
     height: 337px;
 }
+
 #cont8 {
     grid-area: cont8;
     text-align: center;
     width: 416px;
     height: 337px;
 }
+
 
 #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8 {
     width: 250px;
