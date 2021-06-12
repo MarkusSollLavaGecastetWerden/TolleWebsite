@@ -1,10 +1,13 @@
 * {
     font-family: cursive;
     user-select: none;
+    overflow: hidden;
 }
 
 body {
-    background-color: aliceblue;
+    background-image: url(pictures/background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #images {
@@ -48,12 +51,12 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 0.6rem;
     border: solid 2px black;
-    background-color: aliceblue;
+    background: transparent;
 }
 
 #detailsbtn:hover {
     transition: 0.5s;
-    background-color: lightblue;
+    background-color: #cbbcd1;
 }
 
 hr {
