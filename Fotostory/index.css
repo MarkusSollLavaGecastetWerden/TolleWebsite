@@ -56,7 +56,15 @@ footer {
 
 #detailsbtn:hover {
     transition: 0.5s;
-    background-color: #cbbcd1;
+    background-color: #babddc;
+}
+
+.radios {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
 }
 
 hr {
