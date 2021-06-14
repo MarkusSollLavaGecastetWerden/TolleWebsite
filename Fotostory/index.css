@@ -73,9 +73,10 @@ hr {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: var(--propertie);
     align-items: center;
 }
+
 
 @media screen and (max-width: 700px) {
     #images {
@@ -86,6 +87,11 @@ hr {
     }
     #skipRight {
         margin-right: 5%;
+    }
+
+    :root {
+        --size: 1;
+        --propertie: "column";
     }
 }
 
@@ -99,10 +105,20 @@ hr {
     #skipRight {
         margin-right: 20%;
     }
+
+    :root {
+        --size: 2;
+        --propertie: "row";
+    }
 }
 
 @media screen and (min-width: 1000px) {
     #images {
         width: 30%;
+    }
+
+    :root {
+        --size: 3;
+        --propertie: "row";
     }
 }

@@ -1,4 +1,5 @@
-window.addEventListener("load", load)
+window.addEventListener("load", load);
+//window.addEventListener("resize", resize);
 
 let id = setInterval(diashow, 5000);
 let bildNr = 1;
@@ -27,4 +28,14 @@ function skipRight() {
     if (bildNr > 8) bildNr = 1;
 
     document.getElementById("images").src = "pictures/Bild" + bildNr + ".jpg";
+}
+
+let before;
+let after = "<section class='container'><p id='skipLeft'><</p><p id='skipRight'>></p><br><img src='pictures/Bild" + bildNr + ".jpg' id='images'/></section>";
+
+function resize() {
+    var r = document.querySelector('.container');
+    var rs = getComputedStyle(r);
+    size = r.style.setProperty("--propertie", "column");
+    console.log("resize");
 }
