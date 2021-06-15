@@ -170,3 +170,75 @@ function getExif() {
             makeAndModel.innerHTML = `${make} ${model}`;
     });
 }
+
+
+/*
+Copied from spasskopf at github
+*/
+const promise = new Promise((resolve) => {
+    let exifArray = [null, null, null, null, null, null, null];
+    let interval = setInterval(() => {
+        let finished = true;
+
+        for (let i1 = 0; i1 < exifArray.length; i1++) {
+            const it = exifArray[i1];
+            if (it === null) {
+                finished = false;
+                let img = document.getElementById("pic" + (i1 + 1));
+                if (img === null) {
+                    let interval1 = setInterval(() => {
+                        img = document.getElementById("pic" + (i1 + 1));
+                        if (img != null) {
+                            getExifData(img, exifArray, i1);
+                            clearInterval(interval1);
+                        }
+                    }, 100);
+                } else {
+                    console.log("Not null image " + (i1 + 1));
+                    getExifData(img, exifArray, i1);
+                }
+            }
+        }
+        if (finished) {
+            resolve(exifArray);
+            clearInterval(interval);
+        }
+    }, 100)
+
+});
+
+
+promise.then(
+    function (value) {
+        //Hier darstellen
+        const message = JSON.stringify(value);
+        window.alert(message);
+        console.log(message);
+        document.getElementById("exif").innerHTML += value;
+    }
+);
+
+
+
+
+function getExifData(img, exifArray, i) {
+    EXIF.getData(img, function () {
+            const make = EXIF.getTag(this, "Make");
+            const model = EXIF.getTag(this, "Model");
+            const ISO = EXIF.getTag(this, "ISOSpeedRatings");
+            const ISO_SPEED = EXIF.getTag(this, "ExposureTime");
+            const shutter_speed = EXIF.getTag(this, "ShutterSpeed");
+            const LENGTH = EXIF.getTag(this, "FocalLength");
+            const DIST = EXIF.getTag(this, "SubjectDistanceRange");
+            exifArray[i] = {
+                "Make": make,
+                "Model": model,
+                "ISO": ISO,
+                "ISO_Speed": ISO_SPEED,
+                "shutter": shutter_speed,
+                "FocalLength": LENGTH,
+                "Distance": DIST
+            };
+        }
+    );
+}
