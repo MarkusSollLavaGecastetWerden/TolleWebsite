@@ -38,32 +38,32 @@ let wirklichKeit = {
     "becher": {
         "zeit": 300,
         "iso": 32,
-        "blende": "groß",
+        "blende": 2,
     },
     "donau": {
         "zeit": 1500,
         "iso": 100,
-        "blende": "mittel",
+        "blende": 1.5,
     },
     "ubahn": {
         "zeit": 4,
         "iso": 100,
-        "blende": "klein",
+        "blende": 2,
     },
     "prater": {
         "zeit": 180,
         "iso": 50,
-        "blende": "mittel",
+        "blende": 1.9,
     },
     "gloriette": {
         "zeit": 750,
         "iso": 50,
-        "blende": "mittel",
+        "blende": 2,
     },
     "innenstadt": {
         "zeit": 250,
         "iso": 50,
-        "blende": "mittel",
+        "blende": 2.6,
     }
 };
 
@@ -156,7 +156,7 @@ function generateText(index) {
     text += "<h1>Realität</h1>";
     text += "Belichtungszeit: 1/" + data.zeit + "<br>";
     text += "ISO: " + data.iso + "<br>";
-    text += "Blende: " + data.blende + "<br>";
+    text += "Blende: f/" + data.blende + "<br>";
     return text;
 }
 
