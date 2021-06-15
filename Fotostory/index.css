@@ -1,7 +1,6 @@
 * {
     font-family: cursive;
     user-select: none;
-    overflow: hidden;
 }
 
 body {
@@ -91,11 +90,21 @@ hr {
 
     :root {
         --size: 1;
-        --propertie: "column";
+        --propertie: column;
+    }
+
+    #skipLeft {
+        margin: auto;
+        text-align: center;
+    }
+
+    #skipRight {
+        margin: auto;
+        text-align: center;
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
     #images {
         width: 45%;
     }
@@ -108,7 +117,7 @@ hr {
 
     :root {
         --size: 2;
-        --propertie: "row";
+        --propertie: row;
     }
 }
 
@@ -119,6 +128,6 @@ hr {
 
     :root {
         --size: 3;
-        --propertie: "row";
+        --propertie: row;
     }
 }

@@ -175,6 +175,7 @@ function getExif() {
 /*
 Copied from spasskopf at github
 */
+/*
 const promise = new Promise((resolve) => {
     let exifArray = [null, null, null, null, null, null, null];
     let interval = setInterval(() => {
@@ -214,7 +215,7 @@ promise.then(
         const message = JSON.stringify(value);
         window.alert(message);
         console.log(message);
-        document.getElementById("exif").innerHTML += value;
+        //document.getElementById("data1").innerHTML += value;
     }
 );
 
@@ -242,3 +243,4 @@ function getExifData(img, exifArray, i) {
         }
     );
 }
+*/
