@@ -14,6 +14,8 @@ function diashow() {
     if (bildNr > 8) bildNr = 1;
 
     document.getElementById("images").src = "pictures/Bild" + bildNr + ".jpg";
+
+    
 }
 
 function skipLeft() {
