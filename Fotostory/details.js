@@ -80,6 +80,13 @@ let color = 0x000000;
 function load() {
     for (let i = 1; i <= 8; i++) {
         state[i] = [false, false];
+        document.getElementById("cont" + i).addEventListener("mouseout", () => {
+            if (!state[i][0]) return;
+            if (change[i]) return;
+            console.log("nohover " + i);
+            document.getElementById("cont" + i).innerHTML = '<img src="pictures/Bild' + i + '.jpg" id="pic' + i + '">';
+            state[i][0] = false;
+        });
         document.getElementById("cont" + i).addEventListener("mouseover", () => {
             if (change[i]) {
                 change[i] = false;
@@ -90,13 +97,7 @@ function load() {
             document.getElementById("cont" + i).innerHTML = generateText(i);
             state[i][0] = true;
         });
-        document.getElementById("cont" + i).addEventListener("mouseout", () => {
-            if (!state[i][0]) return;
-            if (change[i]) return;
-            console.log("nohover " + i);
-            document.getElementById("cont" + i).innerHTML = '<img src="pictures/Bild' + i + '.jpg" id="pic' + i + '">';
-            state[i][0] = false;
-        });
+
         document.getElementById("cont" + i).addEventListener("mousedown", () => {
             if (state[i][1]) return;
             console.log("down " + i);
