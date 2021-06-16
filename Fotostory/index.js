@@ -37,7 +37,6 @@ let after = "<section class='container'><p id='skipLeft'><</p><p id='skipRight'>
 
 function resize() {
     var r = document.querySelector('.container');
-    var rs = getComputedStyle(r);
     size = r.style.setProperty("--propertie", "column");
     console.log("resize");
 }
