@@ -34,6 +34,11 @@ let planung = {
     }
 };
 
+/*
+Wird jetzt nicht mehr gebraucht
+*/ 
+
+/*
 let wirklichKeit = {
     "becher": {
         "zeit": 300,
@@ -66,6 +71,7 @@ let wirklichKeit = {
         "blende": 2.6,
     }
 };
+*/
 
 let fotos = ["becher", "becher", "donau", "ubahn", "prater", "gloriette", "gloriette", "innenstadt"];
 let state = [];
