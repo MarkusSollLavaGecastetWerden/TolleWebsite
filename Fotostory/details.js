@@ -41,12 +41,12 @@ let wirklichKeit = {
         "blende": 2,
     },
     "donau": {
-        "zeit": 1500,
+        "zeit": 150,
         "iso": 100,
         "blende": 1.5,
     },
     "ubahn": {
-        "zeit": 4,
+        "zeit": 500,
         "iso": 100,
         "blende": 2,
     },
@@ -56,7 +56,7 @@ let wirklichKeit = {
         "blende": 1.9,
     },
     "gloriette": {
-        "zeit": 750,
+        "zeit": 250,
         "iso": 50,
         "blende": 2,
     },
@@ -153,11 +153,17 @@ function generateText(index) {
     text += "ISO: " + data.iso + "<br>";
     text += "Blende: " + data.blende + "<br>";
 
-    data = wirklichKeit[fotos[index]];
+    data = exifArray[index];
+    console.log(data);
+    console.log(exifArray);
     text += "<h1>Realität</h1>";
-    text += "Belichtungszeit: 1/" + data.zeit + "<br>";
-    text += "ISO: " + data.iso + "<br>";
-    text += "Blende: f/" + data.blende + "<br>";
+    if (data.ISO_Speed < 250) {
+        text += "Belichtungszeit: 1/" + Math.round(1000 / data.ISO_Speed) + "s<br>";
+    } else {
+        text += "Belichtungszeit: " + data.ISO_Speed + "ms<br>";
+    }
+    text += "ISO: " + data.ISO + "<br>";
+    text += "Blende: f/" + data.FocalLength + "<br>";
     return text;
 }
 
@@ -174,11 +180,12 @@ function getExif() {
 
 
 /*
-Copied from spasskopf at github
+Mit Hilfe von Stefan gelöst:
 */
-/*
+
+let exifArray = [null, null, null, null, null, null, null, null];
+
 const promise = new Promise((resolve) => {
-    let exifArray = [null, null, null, null, null, null, null];
     let interval = setInterval(() => {
         let finished = true;
 
@@ -214,7 +221,7 @@ promise.then(
     function (value) {
         //Hier darstellen
         const message = JSON.stringify(value);
-        window.alert(message);
+        //window.alert(message);
         console.log(message);
         //document.getElementById("data1").innerHTML += value;
     }
@@ -244,4 +251,3 @@ function getExifData(img, exifArray, i) {
         }
     );
 }
-*/
