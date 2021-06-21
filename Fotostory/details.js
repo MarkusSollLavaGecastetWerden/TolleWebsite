@@ -153,13 +153,13 @@ function generateText(index) {
     index = index - 1;
     
     let text = "";
-    let data = planung[fotos[index - 1]];
+    let data = planung[fotos[index]];
     text += "<h1>Planung</h1>";
     text += "Belichtungszeit: 1/" + data.zeit + "<br>";
     text += "ISO: " + data.iso + "<br>";
     text += "Blende: " + data.blende + "<br>";
 
-    data = exifArray[index - 1];
+    data = exifArray[index];
     console.log(data);
     console.log(exifArray);
     text += "<h1>Realität</h1>";
