@@ -209,7 +209,7 @@ const promise = new Promise((resolve) => {
                         }
                     }, 100);
                 } else {
-                    console.log("Not null image " + (i1 + 1));
+                    //console.log("Not null image " + (i1 + 1));
                     getExifData(img, exifArray, i1);
                 }
             }
